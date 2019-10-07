@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <title>html-rep-ajax-intro</title>
+    <title>MY SR APP</title>
 </head>
 <body>
     <header>
         <div class="top">
-            <div id="logga">My html-ajax-page</div>
-            <div id="menuButton">&equiv;</div>
+            <div id="logga">MY SR APP</div>
+            <!--<div id="menuButton">&equiv;</div>-->
         </div>
         <nav>
             <ul>
-                <li onclick = "getAllChannels()">Channels</li>
-                <li>Programs</li>
+                <li onclick = "getAllChannels()">Visa kanaler</li>
+                <!--<li>Programs</li>
                 <li>Favourites</li>
-                <li>FAQ</li>
+                <li>FAQ</li>-->
             </ul>
         </nav>
 
     </header>
     <main>
         <div class="content">left</div>
+        <div class="content">
+            <div><input id="search" onkeyup=searchPrograms(this) placeholder = "sök program" ></div>
+            <div></div>
+        </div>
         <div class="content">right</div>
 
 
@@ -32,7 +38,8 @@
     </main>
 <footer>
 
-    <h2>end of page</h2>
+    <h2 onclick = "window.scrollTo(0,0)" ><b>&uarr;</b></h2>
+  
 </footer>
    <script src="script.js"></script> 
 </body>

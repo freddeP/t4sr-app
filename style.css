@@ -10,7 +10,7 @@ img{
 }
 header, main, footer{
 
-    min-height:20vh;
+    min-height:10vh;
     border-bottom:1px solid #ddd;
     width:100%;
 }
@@ -40,28 +40,54 @@ header #menuButton{
 }
 
 
-main{
-   
-    min-height:60vh;
-
-}
 main img{
     width:100px;
 }
 main .content{
-    min-height:60vh;
     padding:2%;
     font-size:1.3rem;
     width:100%;
     border:1px solid black;
 }
+main div{
+
+    cursor:pointer;
+}
+
+main div a{
+    color:#303030;
+    font-size:inherit;
+}
+main div a:hover{
+    color:#000;
+    font-size:inherit;
+}
+
+.content div{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content input, .content button{
+
+    font-size:1.6rem;
+    padding:2%;
+
+}
 
 footer{
     background: #ccc;
+    text-align: center;
+    
+}
+footer h2{
+    font-size:4rem; 
+    cursor: pointer;
 }
 
 
-@media(min-width:600px){
+@media(min-width:800px){
 
     main{display:flex;}
 
