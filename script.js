@@ -154,16 +154,6 @@ function printPodFiles(podFiles, nextPage){
 
 
 function fixDate(date){
-
-    date = date.split("(");
-    date= date[1].split(")");
-    date = date[0];
-    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    let d = new Date(parseInt(date));
-    let y = d.getFullYear();
-    let m = d.getMonth()+1;
-    let day = d.getDate();
-    m>9 ? m = m : m = "0"+m;
-    day>9 ? day = day : day = "0"+day;
-    return y+"-"+m+"-"+day;
+    let date = new Date(parseInt(utcDate.replace(/\D+/g, '')))
+    return date.toLocaleString();
 }
